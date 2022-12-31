@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+    </style>
+    <title>Multiplicaciones</title>
+</head>
+<body>
+    <p id="p"></p>
+    <h1 id="n1"></h1>
+    <h1>x</h1>
+    <h1 id="n2"></h1>
+    <h1>=</h1>
+    <input id="resu" type="number">
+    <script src="javascript2.js"></script>
+    <br>
+    <button id="boton" onclick="calcular();">Verificar</button>
+    <br>
+    <h1 id="correcto"></h1>
+    <br>
+    <h1 id="puntaje2">Puntaje:</h1>
+    <h1 id="puntaje">0</h1>
+    <br>
+    <h2 id="error2">Error:</h2>
+    <h2 id="error">0</h2>
+    <br>
+</body>
+</html>

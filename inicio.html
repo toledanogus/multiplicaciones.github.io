@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tablas de multiplicar</title>
+</head>
+<body>
+    <h1 id="titulo">Bienvenido al juego de las multiplicaciones del maestro Gus.</h1>
+    <fieldset>
+    <legend><h3>Instrucciones: </h3></legend>
+    <p>1. Calcula el resultado de la multiplicación que aparezca.</p>
+    <p>2. ¡Cuidado! Porque si tienes 3 errores, iniciarás desde el inicio y tu progreso se perderá.</p>
+    <p>3. Tienes que acumular un puntaje de 25 para que se desbloquee el botón de siguiente nivel.</p>
+    </fieldset>
+    <fieldset>
+    <legend><h3>Escribe tu nombre:</h3></legend>
+    <input id="nombre" type="text" required>
+    <br>
+    <button type="submit" id="boton" onclick="iniciar();">Iniciar</button>
+    </fieldset>
+    <script src="iniciar.js"></script>
+</body>
+</html>
