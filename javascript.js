@@ -1,13 +1,12 @@
 let n1 = document.querySelector('#n1');
 let n2 = document.querySelector('#n2');
-
-
-
 let ran1 = 1;
-let ran2 = Math.floor(Math.random() * 10) + 1;
+let anterior;
+let ran2= Math.floor(Math.random() * 10) + 1;
 
 n1.innerText = ran1;
 n2.innerText = ran2;
+
 document.getElementById("resu").focus();
 let pun = 0;
 let error = 0;
@@ -57,7 +56,18 @@ const calcular = () => {
         document.querySelector('#correcto').innerText = '¡Correcto!';
         pun ++;
         document.querySelector('#puntaje').innerText = pun;
-        let ran2 = Math.floor(Math.random() * 10) + 1;
+        if (ran2 != undefined) {
+            anterior=ran2;
+            console.log(anterior);            
+        }
+        ran2 = Math.floor(Math.random() * 10) + 1;
+        if (anterior==ran2) {
+            console.log('¡Se repitió!');
+            while (anterior==ran2) {
+                ran2 = Math.floor(Math.random() * 10) + 1;
+            }
+            
+        }
         n1.innerText = ran1;
         n2.innerText = ran2;
         document.getElementById("resu").value = "";
