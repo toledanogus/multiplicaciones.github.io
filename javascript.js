@@ -79,7 +79,7 @@ const calcular = () => {
         //let bar = document.getElementsByTagName('progress')[0].value = document.getElementsByTagName('progress')[0].value + 1;
         //console.log(bar);
         let habilitado = document.getElementById("siguiente").disabled;
-        if (pun >= 25 & habilitado== true) {
+        if (pun >= 25 & habilitado != false) {
             habilitado = false;
             let audio2 = new Audio ("aplausos.mp3");
             audio2.play();
