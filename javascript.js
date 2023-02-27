@@ -43,8 +43,6 @@ const renovar = () => {
  }, 3000);
 }
 
-
-
 const calcular = () => {
     let resu = document.querySelector('#resu').value;
     let n3 = document.querySelector('#n1').textContent;
