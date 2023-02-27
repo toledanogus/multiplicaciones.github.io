@@ -78,9 +78,9 @@ const calcular = () => {
         audio.volume = 0.5;
         //let bar = document.getElementsByTagName('progress')[0].value = document.getElementsByTagName('progress')[0].value + 1;
         //console.log(bar);
-        
-        if (pun >= 25) {
-            document.getElementById("siguiente").disabled = false;
+        let habilitado = document.getElementById("siguiente").disabled;
+        if (pun >= 25 & habilitado== true) {
+            habilitado = false;
             let audio2 = new Audio ("aplausos.mp3");
             audio2.play();
             audio.volume = 0.5;
